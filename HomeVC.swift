@@ -11,20 +11,6 @@ import UIKit
 
 class HomeVC: UIViewController {
     
-    @IBOutlet private weak var charactersListingsTV: UITableView!
-    
-    private let controller = HomeVCController()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        controller.delegate = self
-        controller.getComicsListings()
-        charactersListingsTV.register(MarvelCharacterListCell.self, forCellReuseIdentifier: "MarvelCharacterListCell")
-        charactersListingsTV.delegate = self
-        charactersListingsTV.dataSource = self
-// Doing changes...
-    }
-    
 }
 
 extension HomeVC: ComicsListingsUpdator {

@@ -22,7 +22,7 @@ class HomeVC: UIViewController {
         charactersListingsTV.register(MarvelCharacterListCell.self, forCellReuseIdentifier: "MarvelCharacterListCell")
         charactersListingsTV.delegate = self
         charactersListingsTV.dataSource = self
-
+// Doing changes...
     }
     
 }
